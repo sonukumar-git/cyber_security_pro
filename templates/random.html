@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block body_block %}
+{% load staticfiles %}
+<div class="container-fluid">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm" style=" width:75%;">
+              
+              <div class="row" >
+              <div class="col-sm-2" style=" margin-left:15%;">
+
+                  <div class="sidebar_item">
+                      <!-- insert your sidebar items here -->
+                  </br>
+                  </br>
+                    <img src="{% static 'service.png' %}" alt="service graph"  height="400px" width="350px">
+                      
+                     </div>
+          
+              </div>
+              &nbsp;
+              &nbsp;
+              &nbsp;
+              &nbsp;
+              &nbsp;
+              
+            <div class="col-sm-6" >
+                <div id="content">
+                    <!-- insert the page content here -->
+                  </br>
+                </br>
+
+                <h3>Random Forest</h3>
+              </br>
+
+              <h5 style="color: aqua">Random forest is like bootstrapping algorithm with Decision tree (CART) model.
+                Say, we have 1000 observation in the complete population with 10 variables. 
+                Random forest tries to build multiple CART model with different sample and different initial variables. 
+                For instance, it will take a random sample of 100 observation and 5 randomly chosen initial variables to build a CART model. 
+                It will repeat the process (say) 10 times and then make a final prediction on each observation. Final prediction is a function of each prediction. 
+                This final prediction can simply be the mean of each prediction
+              </h5>
+
+                  <h4 style="color: aqua" >Accuracy of the given Algorithm
+                      </br> {{acc}}</h4>
+                    </br>
+                      <h4 style="color:aqua">Confusion matrix:</h4><h3>{{ confusion }}</h3><br>
+
+                    
+                  </div>
+            
+            </div> 
+            </div>
+            
+            
+            
+            </div>
+         
+        </div>
+    </div>
+</div> 
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

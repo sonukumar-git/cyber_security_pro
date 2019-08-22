@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block body_block %}
+{% load staticfiles %}
+      <div class="container-fluid">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-sm" style=" width:75%;">
+                      
+                      <div class="row" >
+                      <div class="col-sm-2" style=" margin-left:15%;">
+
+                          <div class="sidebar_item">
+                              <!-- insert your sidebar items here -->
+                          </br>
+                          </br>
+                            <img src="{% static 'service.png' %}" alt="service graph"  height="400px" width="350px">
+                              
+                             </div>
+                  
+                      </div>
+                      &nbsp;
+                      &nbsp;
+                      &nbsp;
+                      &nbsp;
+                      &nbsp;
+                      
+                    <div class="col-sm-6" >
+                        <div id="content">
+                            <!-- insert the page content here -->
+                          </br>
+                        </br>
+
+                        <h3>Logistic Regression</h3>
+                      </br>
+
+                      <h5 style="color: aqua">Logistic regression is the most famous machine learning algorithm after linear regression. 
+                        In a lot of ways, linear regression and logistic regression are similar. 
+                        But, the biggest difference lies in what they are used for. 
+                        Linear regression algorithms are used to predict/forecast values but logistic regression is used for classification tasks. 
+                        If you are shaky on the concepts of linear regression, check this out. 
+                        There are many classification tasks done routinely by people. 
+                        For example, classifying whether an email is a spam or not, 
+                        classifying whether a tumour is malignant or benign, 
+                        classifying whether a website is fraudulent or not, etc..</h5>
+
+                          <h4 style="color: aqua" >Accuracy of the given Algorithm
+                              </br> {{acc}}</h4>
+                            </br>
+                              <h4 style="color:aqua">Confusion matrix:</h4><h3>{{ confusion }}</h3><br>
+
+                               
+
+                          </div>
+                    
+                    </div> 
+                    </div>
+                    
+                    
+                    
+                    </div>
+                 
+                </div>
+            </div>
+      </div> 
+    
+{% endblock %}
